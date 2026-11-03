@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mota Content Media | Digital Media Marketing Agency</title>
+  <meta name="description" content="Mota Content Media is a digital media marketing agency helping brands grow through strategy, content, social, paid media and analytics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ HEADER / MENU BAR ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#top" class="logo" aria-label="Mota Content Media home">
+        <span class="logo-mark" aria-hidden="true">M</span>
+        <span class="logo-text">Mota<span>Content Media</span></span>
+      </a>
 
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Media Services</a></li>
+        <li><a href="#agent" class="btn btn-primary btn-sm">Contact an Agent</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="grid"></span>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span> Digital Media Marketing Agency</p>
+          <h1>
+            Content that moves people.<br />
+            <span class="gradient-text">Marketing that moves numbers.</span>
+          </h1>
+          <p class="lead">
+            We plan, create and amplify scroll-stopping media across social, video, search and paid
+            channels — so your brand gets seen, remembered and chosen.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#agent" class="btn btn-primary">
+              Talk to an Agent
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#services" class="btn btn-ghost">Explore Media Services</a>
+          </div>
+
+          <ul class="hero-stats">
+            <li><strong>250+</strong><span>Brands grown</span></li>
+            <li><strong>4.2x</strong><span>Average ROAS</span></li>
+            <li><strong>120M</strong><span>Monthly impressions</span></li>
+          </ul>
+        </div>
+
+        <!-- Visual composition -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="card card-main">
+            <div class="card-head">
+              <span class="pill">Campaign Performance</span>
+              <span class="muted">Last 30 days</span>
+            </div>
+            <div class="metric">
+              <strong>+182%</strong>
+              <span class="up">▲ Engagement</span>
+            </div>
+            <svg class="chart" viewBox="0 0 300 110" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#ff5c8a" stop-opacity=".45"/>
+                  <stop offset="100%" stop-color="#ff5c8a" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#7b5cff"/>
+                  <stop offset="100%" stop-color="#ff5c8a"/>
+                </linearGradient>
+              </defs>
+              <path d="M0 95 C30 90 45 70 75 72 S120 50 150 55 S200 25 230 30 S275 10 300 8 L300 110 L0 110Z" fill="url(#area)"/>
+              <path d="M0 95 C30 90 45 70 75 72 S120 50 150 55 S200 25 230 30 S275 10 300 8" fill="none" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <div class="bars">
+              <div><span style="--w:86%"></span><em>Social</em></div>
+              <div><span style="--w:72%"></span><em>Video</em></div>
+              <div><span style="--w:64%"></span><em>Search</em></div>
+            </div>
+          </div>
+
+          <div class="card card-float card-reach">
+            <div class="icon-circle">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M3 11l18-8-8 18-2-8-8-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <strong>2.4M</strong>
+              <span>New reach this week</span>
+            </div>
+          </div>
+
+          <div class="card card-float card-play">
+            <div class="play">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <strong>Video Production</strong>
+              <span>Brand film · 0:45</span>
+            </div>
+          </div>
+
+          <div class="card card-float card-agent">
+            <div class="avatars">
+              <span>JA</span><span>KM</span><span>TR</span>
+            </div>
+            <div>
+              <strong>Agents online</strong>
+              <span><i class="live"></i> Reply in ~5 min</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service ticker -->
+      <div class="ticker" aria-label="Our media services">
+        <div class="ticker-track">
+          <span>Social Media Management</span><span>Video Production</span><span>Paid Advertising</span>
+          <span>SEO &amp; Content</span><span>Influencer Campaigns</span><span>Brand Strategy</span>
+          <span>Analytics &amp; Reporting</span><span>Email Marketing</span>
+          <span aria-hidden="true">Social Media Management</span><span aria-hidden="true">Video Production</span><span aria-hidden="true">Paid Advertising</span>
+          <span aria-hidden="true">SEO &amp; Content</span><span aria-hidden="true">Influencer Campaigns</span><span aria-hidden="true">Brand Strategy</span>
+          <span aria-hidden="true">Analytics &amp; Reporting</span><span aria-hidden="true">Email Marketing</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
