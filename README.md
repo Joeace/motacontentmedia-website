@@ -35,12 +35,21 @@ Copy `.env.example` to `.env.local` if you need to override `NEXT_PUBLIC_SITE_UR
 
 ## Deployment
 
-The site is hosted on **GitHub Pages** as a static export (`output: "export"` in `next.config.ts`).
-Every push to `main` runs `.github/workflows/deploy.yml`, which lints, type-checks, builds to `./out`
-and publishes it. The workflow sets the Pages base path (`/motacontentmedia-website`) and site URL
-automatically; with a custom domain the base path becomes empty.
+The site is hosted on **Cloudflare Pages**, connected to this GitHub repository. Every push to
+`main` deploys to production; every other branch gets a preview URL.
 
-One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+Next.js builds a static export (`output: "export"` in `next.config.ts`) into `./out`.
+Cloudflare Pages project settings (**Settings → Builds & deployments → Build configuration**):
+
+| Setting                | Value                               |
+| ---------------------- | ----------------------------------- |
+| Framework preset       | Next.js (Static HTML Export)        |
+| Build command          | `npm run build`                     |
+| Build output directory | `out`                               |
+| Root directory         | *(leave empty)*                     |
+
+Node.js 22 is pinned by `.node-version`. Set `NEXT_PUBLIC_SITE_URL` to the production domain under
+**Settings → Environment variables** (Production) so canonical and social-preview URLs are correct.
 
 Static hosting means no server code: no API routes, server actions or on-demand image
 optimisation. Forms must post to a third-party service, and images should be optimised
