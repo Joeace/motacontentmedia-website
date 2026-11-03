@@ -31,7 +31,20 @@ Open http://localhost:3000.
 | `npm run lint`      | ESLint                        |
 | `npm run typecheck` | TypeScript, no emit           |
 
-Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_SITE_URL` for production.
+Copy `.env.example` to `.env.local` if you need to override `NEXT_PUBLIC_SITE_URL` locally.
+
+## Deployment
+
+The site is hosted on **GitHub Pages** as a static export (`output: "export"` in `next.config.ts`).
+Every push to `main` runs `.github/workflows/deploy.yml`, which lints, type-checks, builds to `./out`
+and publishes it. The workflow sets the Pages base path (`/motacontentmedia-website`) and site URL
+automatically; with a custom domain the base path becomes empty.
+
+One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+Static hosting means no server code: no API routes, server actions or on-demand image
+optimisation. Forms must post to a third-party service, and images should be optimised
+before they are added to `public/`.
 
 ## Project structure
 
